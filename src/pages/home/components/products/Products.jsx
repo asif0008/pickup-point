@@ -137,10 +137,6 @@ const Products = () => {
                     <Box
                       sx={{
                         display: "flex",
-                        flexDirection: {
-                          xs: "column",
-                          md: "row",
-                        },
                         alignItems: {
                           xs: "center",
                           md: "center",
