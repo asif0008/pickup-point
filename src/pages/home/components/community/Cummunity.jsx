@@ -64,7 +64,7 @@ const Cummunity = () => {
             </Typography>
           </Box>
 
-          <Grid container spacing={2}>
+          <Grid container spacing={{ xs: 0, md: 2 }}>
             <Grid item md={4}>
               <Cards
                 name={data[0].name}

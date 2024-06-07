@@ -76,6 +76,9 @@ const Products = () => {
                 borderRadius: "16px",
                 boxShadow: "0px 1px 4px 0px rgba(0, 0, 0, 0.04)",
                 border: "2px solid #00000010",
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
                 padding: {
                   xs: "10px",
                   md: "24px",
@@ -102,6 +105,9 @@ const Products = () => {
               <Card
                 sx={{
                   marginTop: "32px",
+                  flexGrow: '1',
+                  borderRadius: '12px',
+                  boxShadow: '0px 1px 5px 0px rgba(27, 26, 33, 0.1)',
                   padding: {
                     xs: "0",
                     md: "20px",
@@ -253,8 +259,10 @@ const Products = () => {
                           />
                         </Paragraph>
                       </Box>
-                      <Box sx={{ margin: "6.83px 0 " }}>
-                        <hr />
+                      <Box sx={{ 
+                        margin: "6.83px 0",
+                        borderTop: '0.5px solid rgba(0, 0, 0, 0.08)'
+                        }}>
                       </Box>
                       <Box
                         sx={{
@@ -297,7 +305,7 @@ const Products = () => {
                 borderRadius: "16px",
                 boxShadow: "0px 1px 4px 0px rgba(0, 0, 0, 0.04)",
                 border: "2px solid #00000010",
-                padding: "24px",
+                padding: "14px",
                 height: "100%",
               }}
             >
