@@ -44,7 +44,7 @@ const Cummunity = () => {
         maxWidth="xl"
         sx={{
           padding: {
-            xs: "40px",
+            xs: "40px 0",
             md: "120px 0 0 0",
           },
         }}
@@ -55,9 +55,12 @@ const Cummunity = () => {
               variant="h3"
               sx={{
                 color: "#181818",
-                fontSize: "40px",
+                fontSize: {
+                  xs: '25px',
+                  md: "40px"
+                },
                 fontWeight: "600",
-                lineHeight: "52px",
+                lineHeight: "normal",
               }}
             >
               Words From Your Community{" "}
@@ -74,7 +77,7 @@ const Cummunity = () => {
                 img={data[0].img}
               />
             </Grid>
-            <Grid item md={4}>
+            <Grid item md={4} display={{ xs: 'none', md: 'block' }}>
               <Grid container spacing={2}>
                 <Grid item md={12}>
                   <Cards
@@ -96,7 +99,7 @@ const Cummunity = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item md={4}>
+            <Grid item md={4} display={{ xs: 'none', md: 'block' }}>
               <Cards
                 name={data[3].name}
                 date={data[3].date}
